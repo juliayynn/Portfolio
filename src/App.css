@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+main{
+  background-color: #FFF9FB;
+}
+
+::selection{
+  background-color: #EFA8C8;
+  color:#181818;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +44,200 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*background-color: rgba(255, 255, 255, 0.096);*/
+  
+  padding: 10px 20px;
+  /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+  z-index: 1000;
+  align-items: baseline;
+
+  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+  backdrop-filter: blur(10px); /* Эффект размытия */
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* Полупрозрачная граница сверху */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.nav-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  
+}
+
+.navLink {
+  cursor: pointer;
+}
+
+.navLink:hover{
+  color: #EFA8C8;
+  font-weight: bold;
+}
+
+.navLink.active{
+  
+  font-weight: bold;
+  background: linear-gradient(90deg,rgba(164, 198, 233, 1) 0%, 
+  rgba(198, 169, 214, 1) 34%, rgba(239, 168, 200, 1) 60%, 
+  rgba(242, 180, 191, 1) 76%, rgba(248, 201, 183, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.download-btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #EFA8C8;
+  border: none;
+  border-radius: 8px;
+  color: #191919;
+  font-weight: italic;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.logo{
+  color: #EFA8C8;
+  
+}
+
+.download-btn:hover{
+  background: #A4C6E9;
+  background: linear-gradient(90deg,rgba(164, 198, 233, 1) 0%, 
+  rgba(198, 169, 214, 1) 34%, rgba(239, 168, 200, 1) 60%, 
+  rgba(242, 180, 191, 1) 76%, rgba(248, 201, 183, 1) 100%);
+  color: #181818;
+}
+
+/*Content*/
+
+/*section{
+  min-height: 100vh;
+  padding: 4 rem 2 rem;
+  scroll-margin-top: 80px;
+}*/
+
+/*About me section*/
+
+.gradien-title{
+  font-weight: bolder;
+  font-family: "Libertinus Serif", sans-serif;
+  font-size: 55px;
+  background: linear-gradient(90deg,rgba(164, 198, 233, 1) 0%, 
+  rgba(198, 169, 214, 1) 34%, rgba(239, 168, 200, 1) 60%, 
+  rgba(242, 180, 191, 1) 76%, rgba(248, 201, 183, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-description{
+  padding-left: 1rem;
+  color: #181818;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+#About{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5rem;
+  scroll-margin-top: 80px;
+}
+
+.pic{
+  display: flex;
+  justify-content: center;
+}
+
+.pic img{
+  opacity: 0.9;
+}
+
+/*Skills section*/
+#Skills{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.skills-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.skills-description{
+  color: #181818;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+
+}
+
+/*Projects section*/
+#Projects{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.projects-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.projects-description{
+  color: #181818;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+
 }

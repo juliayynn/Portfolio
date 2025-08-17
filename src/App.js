@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +19,28 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}*/
+
+
+
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+
+function App(){
+  return (
+    <>
+      <Navbar />
+      <main>
+        <About />
+        <Skills />
+        <Projects />
+        {/*<Contact />*/}
+      </main>
+    </>
   );
 }
 
